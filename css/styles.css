@@ -506,6 +506,7 @@ justify-content: center;
     left: 50%;
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px;
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
         background-color: #fcfcfc;
@@ -515,4 +516,10 @@ justify-content: center;
 
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%), scale(0.5);
+}
+
+.modal-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
 }
