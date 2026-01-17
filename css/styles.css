@@ -415,8 +415,11 @@ gap: 48px 24px;
 
 .footer-container {
     display: flex;
-    gap: 120px;
     align-items: baseline;
+}
+
+.footer-container-line {
+    margin-right: 120px;
 }
 
 .footer-logo {
@@ -483,6 +486,7 @@ justify-content: center;
 .footer-subscribe {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
 }
 
 .footer-subscribe-title {
@@ -587,10 +591,10 @@ justify-content: center;
 }
 
 .backdrop:not(.is-open) .modal {
-    transform: translate(-50%, -50%), scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-close {
+.modal-close{
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
@@ -613,16 +617,17 @@ justify-content: center;
     border: none;
 }
 
-.modal-close-svg {
+.modal-close svg {
     width: 8px;
     height: 8px;
+    fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover,
-.modal-close:focus + .modal-close-svg {
+.modal-close:hover svg,
+.modal-close:focus svg {
     fill: #fff;
-} 
+}
 
 .modal-title {
     font-weight: 500;
@@ -658,6 +663,7 @@ justify-content: center;
     transform: translateY(-50%);
     top: 50%;
     left: 16px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked+.modal-checkbox-label>.checkbox-span {
@@ -678,19 +684,19 @@ justify-content: center;
 }
 
 .modal-input:focus + .modal-input-svg {
-    fill: #404bbf;
+    fill: #4d5ae5;
 }
 
 
 .modal-input:focus {
-    border-color: #404bbf;
+    border-color: #4d5ae5;
         outline: none;
 }
 
 .modal-checkbox-label {
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
@@ -704,6 +710,11 @@ justify-content: center;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     fill: transparent;
+    margin-right: 8px;
+}
+
+.modal-form-group-textarea {
+    margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -725,7 +736,7 @@ justify-content: center;
 
 
 .modal-textarea:focus {
-    border-color: #404bbf;
+    border-color: #4d5ae5;
         outline: none;
 }
 
